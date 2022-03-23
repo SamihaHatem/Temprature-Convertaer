@@ -4,12 +4,11 @@
     <div class="overlay">
         <div class="w-75 mx-auto py-5 rounded " style=" display: flex; justify-content: space-evenly;">
             <div>
-                <label class="me-3 h2"> Fahrenheit</label>
-                <!--       <input type="text" value="{{tempValue2 | temprature:'Fahrenheit'}}" [(ngModel)]="tempValue"> -->
+                <label class="me-3 h2">Celsuis </label>
                 <input class="rounded" value="{{FahValue|temprature:'Celsius'}}" type="text" [(ngModel)]="CelValue">
             </div>
             <div>
-                <label class="me-3 h2">Celsuis</label>
+                <label class="me-3 h2">Fahrenheit</label>
                 <input class="rounded" value="{{CelValue|temprature:'Fahrenheit'}}" type="text" [(ngModel)]="FahValue">
             </div>
 
