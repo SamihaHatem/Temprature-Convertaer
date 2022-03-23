@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+    /* You can add global styles to this file, and also import other style files */
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background-color: black !important;
+        color: aliceblue !important;
+        background-image: url('./assets/images/earth.jpg');
+        background-size: 100% 720px;
+        background-repeat: no-repeat;
+        filter: blur(10);
+    }

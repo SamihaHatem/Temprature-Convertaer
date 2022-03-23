@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="text-center my-5">Temperature Converter</h1>
+    <i class="fas fa-temperature-high text-center"></i>
+    <div class="overlay">
+        <div class="w-75 mx-auto py-5 rounded " style=" display: flex; justify-content: space-evenly;">
+            <div>
+                <label class="me-3 h2"> Fahrenheit</label>
+                <!--       <input type="text" value="{{tempValue2 | temprature:'Fahrenheit'}}" [(ngModel)]="tempValue"> -->
+                <input class="rounded" value="{{FahValue|temprature:'Celsius'}}" type="text" [(ngModel)]="CelValue">
+            </div>
+            <div>
+                <label class="me-3 h2">Celsuis</label>
+                <input class="rounded" value="{{CelValue|temprature:'Fahrenheit'}}" type="text" [(ngModel)]="FahValue">
+            </div>
+
+
+        </div>
+        <div class="w-100">
+            <p class="text-center fw-bold text-dark">Formula</p>
+            <p class="text-center fw-bold text-dark pb-5">(32°C × 9/5) + 32 = 89.6°F </p>
+        </div>
+    </div>
+
+</div>
